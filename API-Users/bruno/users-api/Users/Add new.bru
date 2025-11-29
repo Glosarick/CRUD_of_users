@@ -1,0 +1,22 @@
+meta {
+  name: Add new
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{path}}/users/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "user": {
+      "name": "Miguel Parra",
+      "email": "test@test.com",
+      "id": "",
+      "created": ""
+    }
+  }
+}
